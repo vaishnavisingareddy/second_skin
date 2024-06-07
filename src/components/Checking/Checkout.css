@@ -1,10 +1,7 @@
 .banner {
   width: 100%;
   height: 250px;
-}
-
-/* Laptop to Tablet */
-
+} 
 @media (max-width: 1024px) {
   .cart-container {
     display: flex;

@@ -18,7 +18,8 @@ const reducer = (state = initialState, action) => {
       const newItem = {quantity: 1, product: action.payload};
       console.log([...newState, newItem],'addtoCart')
       return [...newState, newItem];
-    case 'updateCart':
+    
+      case 'updateCart':
       newState.forEach((item) => {
         if (item.product.id === action.payload.productId) {
           if (action.payload.type === 'increase') {
@@ -31,7 +32,9 @@ const reducer = (state = initialState, action) => {
         }
       });
       return ([...newState]);
-    case 'removefromcart':
+    
+    
+      case 'removefromcart':
       const index = newState.findIndex(item => item.product.id === action.payload);
       console.log(index,'remove')
       newState.splice(index, 1);

@@ -6,11 +6,7 @@ const router = express.Router();
 router.get("/",(req, res)=>{
     res.status(200).send("the-second-skin");
 })
-
-// create api
-router.post("/newproduct", Product.createProduct);
-
-// get all products
+// router.post("/newproduct", Product.createProduct);
 router.get("/allproducts", Product.getAllProduct);
 
 module.exports = router;

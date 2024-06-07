@@ -87,8 +87,8 @@ export default function Navbar({
          
         
       </div>
-      <div>
-        <marquee className="markq" style={{color:"black"}}>🌟🚀HURRY UP🌟🚀 20% OFF FLASH SALE! 🌟🌟 Grab your favorites now!🛍️🛍️Hurry, before it's gone!🚀🚀🚀 </marquee>
+      <div className="scrolling-text">
+        🌟🚀HURRY UP🌟🚀 20% OFF FLASH SALE! 🌟🌟 Grab your favorites now!🛍️🛍️Hurry, before it's gone!🚀🚀🚀
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-eve secnvb">
         <div className="container-fluid secnvb">
@@ -172,7 +172,6 @@ export default function Navbar({
             </ul>
           </div>
         </div>
-      </nav>
-    </>
+      </nav></>
   );
 }

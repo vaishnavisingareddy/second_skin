@@ -3,9 +3,9 @@ import Product from './Product';
 import './product.css';
 
 export default function Allproducts({ data }) {
-  const [sortingOption, setSortingOption] = useState(''); // State variable for sorting option
+  const [sortingOption, setSortingOption] = useState(''); 
 
-  // Sort function based on the selected option
+ 
   function sortProducts(a, b) {
     if (sortingOption === 'price-ascending') {
       return a.price - b.price;
@@ -20,12 +20,12 @@ export default function Allproducts({ data }) {
     }
   }
 
-  // Handle sorting option change
+ 
   function handleSortOptionChange(event) {
     setSortingOption(event.target.value);
   }
 
-  const sortedData = [...data].sort(sortProducts); // Create a copy of data to avoid mutation
+  const sortedData = [...data].sort(sortProducts); 
 
   return (
     <>
